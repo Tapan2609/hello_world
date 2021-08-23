@@ -1,0 +1,5 @@
+sample:
+    groupa:
+        param1: value1us
+        param2: value2us
+    higherparam: valuehigherus

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Ariba Greeting Service</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+         .summit {
+            background-color: #f0ad4e;
+            border-color: #eea236;
+         }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <marquee direction="right" scrolldelay="20" scrollamount="10" truespeed="true">
+            <img width="50%" height="50%" src="https://github.com/sap-ariba/artifacts/raw/master/car.cobalt.blue.png"/>
+        </marquee>
+
+        <h1>Hello World!!!</h1>
+        <h2 th:text="'Welcome, ' + ${name} + '!'">Cobalt!</h2>
+        <button class="btn btn-primary" type="button">
+            Count <span class="badge" th:text="${count}">0</span>
+        </button>
+        <button class="btn btn-success" type="button">
+            Container <span class="badge" th:text="${ip}">0</span>
+        </button>
+        <button class="btn btn-primary" type="button">
+            split.io proxy <span class="badge" th:text="${splitResponse}">0</span>
+        </button>
+        <button class="btn btn-primary" type="button">
+            net api proxy <span class="badge" th:text="${netResponse}">0</span>
+        </button>
+        <button class="btn btn-primary" type="button">
+            apache httpclients <span class="badge" th:text="${httpclientsResponse}">0</span>
+        </button>
+        <button class="btn btn-primary" type="button">
+            apache httpclientbuilder <span class="badge" th:text="${httpclientbuilderResponse}">0</span>
+        </button>
+        
+        <p>This demostrates the canary deployment infrastructure based on docker images into the nomad clusters.</p>
+        <p><a class="btn btn-primary btn-lg" href="https://wiki.ariba.com/display/COB/" role="button">Learn more</a></p>
+    </div>
+</div>
+<!-- /.container -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="suite1" verbose="1">
+    <groups>
+        <run>
+            <include name="functional"/>
+        </run>
+    </groups>
+    <test name="Test End Points">
+        <classes>
+            <class name="com.ariba.test.tests.TestWebService"/>
+        </classes>
+    </test>
+</suite>

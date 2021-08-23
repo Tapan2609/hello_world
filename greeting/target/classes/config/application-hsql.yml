@@ -1,0 +1,16 @@
+#hsql db settings
+spring:
+  flyway:
+    enabled: false
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.HSQLDialect
+  datasource:
+#    data: classpath:/data-hsqldb.sql
+    url: jdbc:hsqldb:file:./hsqldb/greeting-service
+    username: greeting-service
+    platform: hsqldb

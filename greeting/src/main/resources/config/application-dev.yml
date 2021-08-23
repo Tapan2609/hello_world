@@ -1,0 +1,6 @@
+sample:
+    groupa:
+        param1: value1dev
+        param2: value2dev
+LOG:
+    LEVEL: debug

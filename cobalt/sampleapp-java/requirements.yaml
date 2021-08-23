@@ -1,0 +1,5 @@
+---
+dependencies:
+  - name: "cobalt-helm"
+    repository: "https://repo.cobalt.ariba.com/k8s"
+    version: "3.2.36"

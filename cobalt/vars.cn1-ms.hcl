@@ -1,0 +1,1 @@
+{{ $greeting_count := "7" }}

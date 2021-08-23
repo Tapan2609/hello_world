@@ -1,0 +1,5 @@
+FROM {{ env "DOCKER_REGISTRY" }}/cobalt/alpine-nginx:{{ env "BASE_IMAGE_VERSION" }}
+
+ENV INCLUDE_INDEX_HTML false
+ENV ACTIVE_ACTIVE true
+ENV ENABLE_TLS true

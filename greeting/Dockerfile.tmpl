@@ -1,0 +1,13 @@
+FROM {{ env "DOCKER_REGISTRY" }}/cobalt/alpine-jre8:{{ env "BASE_IMAGE_VERSION" }}
+
+ADD target/sampleapp-java-0.1.0.jar app.jar
+
+ENV HEALTH_CHECK_URL http://localhost:8080/greeting
+
+ENV APP_NAME "sampleapp-java"
+ENV APP_UUID "2ef6193d-5750-45b9-8098-f98f4232dd3c"
+ENV ACTIVE_ACTIVE true
+ENV ENABLE_TLS true
+ENV NO_PREFIX true
+
+RUN mkdir -p /sampleapp

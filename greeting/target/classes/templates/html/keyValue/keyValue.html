@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Most recent key-value changes from Consul</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 80%;
+}
+th,td {
+	text-align: center;
+	
+}
+td+td {
+  width: auto;
+}
+
+
+    </style>
+</head>
+<body>
+<h2 align="center">Most recent key-value changes from Consul</h2>
+<table align="center">
+    <tr>
+        <th>Type</th>
+        <th>Key</th>
+        <th>Value</th>
+    </tr>
+
+    <tr th:each="addition : ${additions}">
+        <!-- <td style="padding: 0 15px;" th:text="addition">Text...</td> -->
+        <td id="td1" th:text="addition">Text...</td>
+        <td th:text="${addition.path_on_change}">Text ...</td>
+        <td th:text="${addition.value}">Text ...</td>
+    </tr>
+
+    <tr th:each="deletion : ${deletions}">
+        <td th:text="deletion">Text ...</td>
+        <td th:text="${deletion.path_on_change}">Text ...</td>
+        <td th:text="${deletion.value}">Text ...</td>
+    </tr>
+
+    <tr th:each="modification : ${modifications}">
+        <td th:text="modification">Text...</td>
+        <td th:text="${modification.path_on_change}">Text ...</td>
+        <td th:text="${modification.value}">Text ...</td>
+    </tr>
+</table>
+
+</body>
+</html>

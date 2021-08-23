@@ -1,0 +1,3 @@
+greeting:
+  deployment:
+    replicaCount: 5

@@ -1,0 +1,8 @@
+/*C1*/SET SCHEMA SYSTEM_LOBS
+INSERT INTO BLOCKS VALUES(0,2147483647,0)
+COMMIT
+/*C2*/SET SCHEMA PUBLIC
+drop table if exists car CASCADE 
+create table car (id binary(16) not null, model varchar(255) not null, time_created timestamp not null, time_updated timestamp not null, version bigint, year varchar(255) not null, primary key (id))
+INSERT INTO CAR VALUES('39422bcbdb804bb49acbf91096896e4a','Hyundai Venue','2021-08-18 03:32:25.496000','2021-08-18 03:32:25.496000',0,'2019')
+COMMIT
