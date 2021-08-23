@@ -1,6 +1,0 @@
-dependencies:
-- name: cobalt-helm
-  repository: https://repo.cobalt.ariba.com/k8s
-  version: 3.2.36
-digest: sha256:d85edae4c02e05a0564c0eb4b92253b50e4997bf1321f6a95e9004dfaf66a6f7
-generated: "2021-08-18T03:46:06.0334564Z"

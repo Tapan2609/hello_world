@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<suite name="TestNgSeleniumSuite" parallel="false">
-	<test name="TestNgSeleniumTest">
-		<classes>
-			<class
-				name="com.ariba.sampleapp.selenium.TestNGSeleniumSample" />
-		</classes>
-	</test>
-</suite>

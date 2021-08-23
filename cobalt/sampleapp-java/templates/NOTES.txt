@@ -1,4 +1,0 @@
-Name: {{ .Chart.AppVersion }}
-Version: {{ .Chart.Version }}
-Release name: {{ .Release.Name }}
-Namespace: {{ .Release.Namespace }}

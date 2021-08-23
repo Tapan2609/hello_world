@@ -1,8 +1,0 @@
-FROM {{ env "DOCKER_REGISTRY" }}/cobalt/alpine-jre8:{{ env "BASE_IMAGE_VERSION" }}
-
-ADD target/sampleapp-java-tests-0.0.1.jar app.jar
-
-ENV HEALTH_CHECK_URL=http://localhost:8080/v1/message
-
-ENV IS_ENTRY_POINT true
-ENV ENABLE_TLS true

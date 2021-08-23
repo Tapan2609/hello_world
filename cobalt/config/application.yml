@@ -1,9 +1,0 @@
-server:
-  port: 8080
-  name: localhost
-  greeting: greeting-service
-sample:
-    groupa:
-        param1: value1base
-        param2: value2base
-    higherparam: valuehigherbase
